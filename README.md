@@ -1,2 +1,1 @@
-Project for HI1033. \n
-Group members are me only.
+Project for HI1033. Group members are me only.
