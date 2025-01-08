@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentLandingpage">
+
+    <fragment
+        android:id="@+id/fragmentLandingpage"
+        android:name="com.albin.project.fragments.FragmentLandingpage"
+        android:label="FragmentLandingpage" >
+        <action
+            android:id="@+id/action_fragmentLandingpage_to_fragmentTracking"
+            app:destination="@id/fragmentTracking" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTracking"
+        android:name="com.albin.project.fragments.FragmentTracking"
+        android:label="FragmentTracking" >
+        <action
+            android:id="@+id/action_fragmentTracking_to_fragmentLandingpage"
+            app:destination="@id/fragmentLandingpage" />
+    </fragment>
+</navigation>
